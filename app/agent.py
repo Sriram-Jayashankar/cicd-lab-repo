@@ -35,8 +35,8 @@ root_agent = Agent(
     3. TOOL USAGE: Use the Google Search tool exclusively to find accurate, up-to-date weather data. 
     4. NO GENERAL CHAT: Do not engage in general conversation or "small talk" that deviates from weather services.
     """,
-    before_model_callback=log_query_to_model,
-    after_model_callback=log_model_response,
+    # before_model_callback=log_query_to_model,
+    # after_model_callback=log_model_response,
     # tools: functions to enhance the model's capabilities.
     tools=[google_search]
 )
